@@ -16,3 +16,6 @@ for ticker in tickers:
     if main_df.empty:
         main_df = df
     else: main_df=main_df.join(df,how='outer')
+main_df.to_csv('sp500_data.csv')
+print('Data Compiled!')
+
